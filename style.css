@@ -1,0 +1,96 @@
+.text-container {
+    text-align: center;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+  }
+  
+  #result {
+    width: 100%; /* Make it adapt to the container */
+    height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    box-sizing: border-box; /* Include padding and border in width */
+  }
+  
+  .calculator {
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 350px; /* Limit the maximum width */
+    background: linear-gradient(135deg, #dac82e, #fc7b25);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 10px;
+  }
+  
+  button {
+    height: 50px;
+    font-size: 1.2em;
+    box-shadow: 0 4px 10px rgba(94, 127, 227, 0.997);
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #e0e0e0;
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 600px) {
+    #result {
+      font-size: 1.2em; /* Adjust font size */
+      height: 45px; /* Adjust height */
+    }
+  
+    button {
+      height: 45px; /* Adjust button height */
+      font-size: 1em; /* Adjust font size */
+    }
+  
+    .calculator {
+      padding: 15px; /* Reduce padding */
+    }
+  
+    .buttons {
+      gap: 8px; /* Reduce gaps between buttons */
+    }
+  }
+  
+  /* Media Query for Very Small Screens (e.g., phones) */
+  @media (max-width: 400px) {
+    #result {
+      font-size: 1em; /* Further adjust font size */
+      height: 40px; /* Adjust height */
+    }
+  
+    button {
+      height: 40px; /* Adjust button height */
+      font-size: 0.9em; /* Adjust font size */
+    }
+  
+    .calculator {
+      width: 95%; /* Take up more screen width */
+    }
+  }
+  
